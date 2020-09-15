@@ -35,9 +35,10 @@ public class HelloTest {
         Hello handler = new Hello();
         Context ctx = createContext();
 
-        String output = handler.handleRequest(input, ctx);
+        @SuppressWarnings("unused")
+		String output = handler.handleRequest(input, ctx);
 
         // TODO: validate output here if needed.
-        Assert.assertEquals("Hello from Lambda !", "Hello from Lambda !");
+        Assert.assertEquals("Hello from Lambda!", "Hello from Lambda!");
     }
 }
